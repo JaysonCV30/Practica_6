@@ -1,7 +1,6 @@
 package com.mycompany.practica_6;
 
 import java.util.ArrayList;
-//import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
