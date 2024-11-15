@@ -1,13 +1,10 @@
 package com.mycompany.practica_6;
 
-import java.awt.BorderLayout;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
 import java.awt.Font;
 import java.util.ArrayList;
 import java.util.HashSet;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 
 public class JuegoAhorcado_grafico extends javax.swing.JFrame {
 
@@ -93,7 +90,6 @@ public class JuegoAhorcado_grafico extends javax.swing.JFrame {
     public void mostrarFrase(String frase, HashSet<Character> letrasIndicadas) {
         // Verifica que letrasFrase tenga el mismo tamaño que la frase
         if (letrasFrase.size() != frase.length()) {
-            System.out.println("Error: el tamaño de letrasFrase no coincide con la longitud de la frase.");
             while (letrasFrase.size() < frase.length()) {
                 letrasFrase.add(new JLabel("_"));  // Añadir etiquetas si faltan
             }
@@ -114,7 +110,6 @@ public class JuegoAhorcado_grafico extends javax.swing.JFrame {
         // Refrescar el panel para reflejar los cambios
         panelFrase.revalidate();
         panelFrase.repaint();
-        //add(panelFrase, BorderLayout.CENTER);
     }
 
     public void setletraSeleccionada(char letraSeleccionada) {
@@ -919,41 +914,6 @@ public class JuegoAhorcado_grafico extends javax.swing.JFrame {
         char letra = 'z';
         setletraSeleccionada(letra);
     }//GEN-LAST:event_LetraZActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JuegoAhorcado_grafico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JuegoAhorcado_grafico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JuegoAhorcado_grafico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JuegoAhorcado_grafico.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new JuegoAhorcado_grafico().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel FraseAdivinada;

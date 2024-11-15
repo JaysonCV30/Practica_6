@@ -2,7 +2,6 @@ package com.mycompany.practica_6;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Scanner;
 
 public class JuegoAhorcado {
 
@@ -43,7 +42,6 @@ public class JuegoAhorcado {
                 while (sigueAdivinando) {
                     juegoGrafico.inicializarPanelFrase(frase);
                     juegoGrafico.setVisible(true);
-                    //Scanner scanner = new Scanner(System.in);
                     System.out.println("Turno de " + jugador.getNombre() + ":");
                     juegoGrafico.mostrarTurnoYPuntosDelJugador(jugador);
                     System.out.println("Puntos actuales: " + jugador.getPuntos());
@@ -51,17 +49,9 @@ public class JuegoAhorcado {
                     System.out.println("Frase actual: " + mostrarFrase());
 
                     System.out.print("Indique una letra: ");
-                    //String input = scanner.nextLine().toLowerCase();
-                    /*if (input.length() != 1) {
-                        System.out.println("Por favor, ingrese solo una letra.");
-                        continue; // Salta esta iteración y pide nuevamente
-                    }*/
-
-                    //char letra = input.charAt(0);
                     char letra = juegoGrafico.getLetraElegida();
                     // Verificar que sea una letra
                     while (letra == '\0') {
-                        //cartaEscogida = mesaGrafica.obtenerUltimaCartaSeleccionadaLogica();
                         letra = juegoGrafico.getLetraElegida();
                     }
 
@@ -103,7 +93,6 @@ public class JuegoAhorcado {
                         System.out.println(jugador.getNombre() + " ha ganado la ronda! " + "con " + jugador.getPuntos() + " puntos!!");
                         System.out.println("La frase completa es: " + frase);
                         juegoGrafico.mostrarFraseAdivinada(frase);
-                        //sigueAdivinando = false;
                         break;
                     }
                     juegoGrafico.setletraSeleccionada('\0');

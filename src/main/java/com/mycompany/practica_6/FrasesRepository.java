@@ -28,12 +28,12 @@ public class FrasesRepository {
         frases.add("El que mucho abarca poco aprieta");
         frases.add("A mal tiempo buena cara");
         frases.add("La curiosidad mato al gato");
-        frases.add("Camaron que se duerme se lo lleva la corriente");
+        frases.add("Aprende de cada error");
         frases.add("En casa de herrero cuchillo de palo");
         frases.add("Ojos que no ven corazon que no siente");
         frases.add("La esperanza es lo ultimo que se pierde");
         frases.add("Al que madruga Dios le ayuda");
-        frases.add("No hay camino para la paz la paz es el camino");
+        frases.add("La vida es un regalo");
         frases.add("Una imagen vale mas que mil palabras");
         frases.add("El que no arriesga no gana");
         frases.add("Dime con quien andas y te dire quien eres");
